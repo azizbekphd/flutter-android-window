@@ -33,7 +33,7 @@ class WindowService : android.app.Service() {
       val y = intent.getIntExtra("y", 0)
       androidWindow = AndroidWindow(this, width, height, x, y, engine)
       androidWindow.open()
-      startForeground(1, getNotification())
+      //startForeground(1, getNotification())
       running = true
     }
     return super.onStartCommand(intent, flags, startId)
